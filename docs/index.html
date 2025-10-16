@@ -3,96 +3,218 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Club Hub — La plataforma que impulsa tu club</title>
+  <title>ClubHub Gestión — Digitaliza tu club deportivo</title>
+  <meta name="description" content="La plataforma todo-en-uno para gestionar tu club: calendario, equipos, miembros, comunicaciones y pagos.">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <header class="nav">
   <div class="container nav__inner">
-    <div class="brand">Club <span>Hub</span></div>
+    <a class="brand" href="#">
+      <span class="brand__logo">⚽</span>
+      <span class="brand__name">ClubHub <b>Gestión</b></span>
+    </a>
+
+    <input id="nav-toggle" type="checkbox" class="nav__toggle" aria-label="Abrir menú" />
+    <label for="nav-toggle" class="nav__burger"><span></span></label>
+
     <nav class="menu">
       <a href="#func">Funcionalidades</a>
+      <a href="#capturas">Capturas</a>
       <a href="#precios">Precios</a>
-      <a href="#qs">¿Quiénes somos?</a>
+      <a href="#contacto">Contacto</a>
       <a class="btn btn--ghost" href="../">Iniciar sesión</a>
-      <a class="btn" href="#demo">Solicitar demo</a>
+      <a class="btn" href="#contacto">Solicitar demo</a>
     </nav>
   </div>
 </header>
 
-<section class="hero">
-  <div class="container hero__grid">
-    <div>
-      <h1>La plataforma todo-en-uno para tu club</h1>
-      <p class="lead">Planifica entrenamientos y partidos, comunica sin caos y cobra cuotas — con app móvil para tus miembros.</p>
-      <div class="cta">
-        <a class="btn btn--big" href="#demo">Probar gratis</a>
-        <a class="btn btn--ghost btn--big" href="#func">Ver funcionalidades</a>
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <h1>Gestiona tu club <span class="text-primary">sin caos</span></h1>
+        <p class="lead">
+          Calendario, equipos, miembros, comunicaciones y pagos — todo en un solo panel, con app móvil para tus jugadores y familias.
+        </p>
+        <div class="cta">
+          <a class="btn btn--big" href="#contacto">Probar gratis</a>
+          <a class="btn btn--ghost btn--big" href="#func">Ver funcionalidades</a>
+        </div>
+        <div class="hero__badges">
+          <span>⚡ Rápido de arrancar</span>
+          <span>🔒 Seguro (Firebase)</span>
+          <span>📱 App iOS/Android</span>
+        </div>
+      </div>
+      <div class="mock">
+        <!-- Imagen/Mockup: si luego tienes captura, ponla en /docs/mock.png -->
+        <div class="mock__frame">
+          <div class="mock__topbar">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="mock__content">
+            <h4>Panel de Control</h4>
+            <div class="kpis">
+              <div class="kpi"><small>Eventos</small><strong>5</strong></div>
+              <div class="kpi"><small>Pagos</small><strong>12</strong></div>
+              <div class="kpi"><small>Convocados</small><strong>18</strong></div>
+            </div>
+            <div class="list">
+              <div class="row"><span>Entrenamiento Cadete</span><time>Hoy • 18:30</time></div>
+              <div class="row"><span>Partido Alevín A</span><time>Sab • 10:00</time></div>
+              <div class="row"><span>Reunión Familias</span><time>Lun • 19:00</time></div>
+            </div>
+          </div>
+        </div>
+        <p class="mock__hint">*Ejemplo de interfaz</p>
       </div>
     </div>
-    <img src="mock.png" alt="Vista de la plataforma" class="hero__img" />
-  </div>
-</section>
+  </section>
 
-<section id="trust" class="trust">
-  <div class="container">
-    <p class="trust__title">Ya confían en nosotros</p>
-    <div class="trust__logos">
-      <div class="logo">⚽</div><div class="logo">🏀</div><div class="logo">🏐</div><div class="logo">🥎</div>
-    </div>
-  </div>
-</section>
-
-<section id="func" class="features">
-  <div class="container">
-    <h2>Todo lo que necesitas, sin complicarte</h2>
-    <div class="grid">
-      <div class="card"><h3>Calendario inteligente</h3><p>Entrenamientos, partidos y torneos sin choques de instalaciones.</p></div>
-      <div class="card"><h3>Miembros y equipos</h3><p>Jugadores, familias y staff con permisos claros.</p></div>
-      <div class="card"><h3>Comunicaciones</h3><p>Avisos oficiales y chats de equipo. Adiós WhatsApp.</p></div>
-      <div class="card"><h3>Pagos</h3><p>Cuotas y recordatorios automáticos. Todo bajo control.</p></div>
-      <div class="card"><h3>App del club</h3><p>Tu logo y colores en iOS y Android.</p></div>
-      <div class="card"><h3>Multi-club</h3><p>Gestiona varias entidades desde un panel global.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="precios" class="pricing">
-  <div class="container">
-    <h2>Planes simples</h2>
-    <div class="grid">
-      <div class="price">
-        <h3>Básico</h3><p>Para clubes pequeños</p><strong>29 €/mes</strong>
-        <ul><li>Equipos y calendario</li><li>Comunicaciones</li><li>App del club</li></ul>
-        <a class="btn" href="#demo">Empezar</a>
-      </div>
-      <div class="price price--fav">
-        <h3>Profesional</h3><p>El más popular</p><strong>59 €/mes</strong>
-        <ul><li>Todo lo del Básico</li><li>Pagos y recordatorios</li><li>Multi-club</li></ul>
-        <a class="btn" href="#demo">Elegir</a>
-      </div>
-      <div class="price">
-        <h3>Élite</h3><p>Grandes entidades</p><strong>Consultar</strong>
-        <ul><li>Usuarios ilimitados</li><li>Soporte prioritario</li><li>SSO / Integraciones</li></ul>
-        <a class="btn" href="#demo">Contactar</a>
+  <!-- TRUST -->
+  <section class="trust">
+    <div class="container">
+      <p class="trust__title">Ya confían en nosotros</p>
+      <div class="trust__logos">
+        <div class="logo">🏀</div>
+        <div class="logo">🏐</div>
+        <div class="logo">🥎</div>
+        <div class="logo">🏉</div>
+        <div class="logo">🏸</div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="qs" class="about">
-  <div class="container">
-    <h2>Hecho por gente de club</h2>
-    <p>Construimos Club Hub con una idea: menos gestión, más deporte. Soporte humano y mejoras constantes.</p>
-  </div>
-</section>
+  <!-- FEATURES -->
+  <section id="func" class="features">
+    <div class="container">
+      <h2>Todo lo que necesitas, sin complicarte</h2>
+      <p class="muted center">Diseñado para ahorrar tiempo a administradores y entrenadores.</p>
+
+      <div class="grid">
+        <div class="card">
+          <div class="card__icon">📅</div>
+          <h3>Calendario inteligente</h3>
+          <p>Entrenamientos y partidos sin choques de instalaciones. Convocatorias con RSVP.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">👥</div>
+          <h3>Equipos y miembros</h3>
+          <p>Jugadores, familiares y staff con permisos claros y fichas completas.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">📣</div>
+          <h3>Comunicaciones</h3>
+          <p>Avisos oficiales y chats por equipo. Notificaciones push automáticas.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">💳</div>
+          <h3>Pagos</h3>
+          <p>Cuotas e inscripciones con recordatorios. Control de morosidad en un vistazo.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">📱</div>
+          <h3>App del club</h3>
+          <p>Tu logo y tus colores en iOS y Android. Agenda personal para cada usuario.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">🏢</div>
+          <h3>Multi-club</h3>
+          <p>Gestiona varias entidades desde un panel global con estadísticas y planes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPTURAS -->
+  <section id="capturas" class="shots">
+    <div class="container">
+      <h2>Un vistazo al panel</h2>
+      <p class="muted center">Minimalista, rápido y pensado para el día a día.</p>
+      <div class="shots__grid">
+        <div class="shot"></div>
+        <div class="shot"></div>
+        <div class="shot"></div>
+      </div>
+      <p class="muted center small">¿Quieres ver tu propio club aquí? Pide una demo y te la preparamos.</p>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="precios" class="pricing">
+    <div class="container">
+      <h2>Planes simples</h2>
+      <div class="grid">
+        <div class="price">
+          <h3>Básico</h3>
+          <p class="muted">Para clubes pequeños</p>
+          <strong>29 €/mes</strong>
+          <ul>
+            <li>Equipos y calendario</li>
+            <li>Comunicaciones</li>
+            <li>App del club</li>
+          </ul>
+          <a class="btn" href="#contacto">Empezar</a>
+        </div>
+        <div class="price price--fav">
+          <h3>Profesional</h3>
+          <p class="muted">El más popular</p>
+          <strong>59 €/mes</strong>
+          <ul>
+            <li>Todo lo del Básico</li>
+            <li>Pagos y recordatorios</li>
+            <li>Multi-club</li>
+          </ul>
+          <a class="btn" href="#contacto">Elegir</a>
+        </div>
+        <div class="price">
+          <h3>Élite</h3>
+          <p class="muted">Grandes entidades</p>
+          <strong>Consultar</strong>
+          <ul>
+            <li>Usuarios ilimitados</li>
+            <li>Soporte prioritario</li>
+            <li>Integraciones/SSO</li>
+          </ul>
+          <a class="btn" href="#contacto">Contactar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contacto" class="contact">
+    <div class="container contact__grid">
+      <div>
+        <h2>¿Lo probamos con tu club?</h2>
+        <p class="muted">Te configuramos el entorno inicial sin coste y en menos de 24h.</p>
+        <ul class="contact__bullets">
+          <li>✓ Importación de miembros por CSV</li>
+          <li>✓ Plantillas de eventos</li>
+          <li>✓ Branding del club</li>
+        </ul>
+      </div>
+      <form class="form" action="https://formspree.io/f/xayzvzzz" method="POST">
+        <label>Nombre del club<input name="club" required></label>
+        <label>Tu email<input name="email" type="email" required></label>
+        <label>Mensaje<textarea name="msg" rows="4" placeholder="Cuéntanos cómo os organizáis ahora…"></textarea></label>
+        <button class="btn" type="submit">Solicitar demo</button>
+        <p class="mini muted">Al enviar, aceptas nuestra política de privacidad.</p>
+      </form>
+    </div>
+  </section>
+</main>
 
 <footer class="footer">
   <div class="container footer__grid">
-    <div>© <span id="y"></span> Club Hub</div>
-    <nav><a href="#">Privacidad</a> · <a href="#">Términos</a> · <a href="#demo">Contacto</a></nav>
+    <div>© <span id="y"></span> ClubHub Gestión</div>
+    <nav>
+      <a href="#">Privacidad</a> · <a href="#">Términos</a> · <a href="mailto:info@clubhubgestion.com">Contacto</a>
+    </nav>
   </div>
   <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </footer>
