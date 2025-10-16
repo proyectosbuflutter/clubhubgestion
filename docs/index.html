@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Club Hub — La plataforma que impulsa tu club</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="container nav__inner">
+    <div class="brand">Club <span>Hub</span></div>
+    <nav class="menu">
+      <a href="#func">Funcionalidades</a>
+      <a href="#precios">Precios</a>
+      <a href="#qs">¿Quiénes somos?</a>
+      <a class="btn btn--ghost" href="../">Iniciar sesión</a>
+      <a class="btn" href="#demo">Solicitar demo</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero__grid">
+    <div>
+      <h1>La plataforma todo-en-uno para tu club</h1>
+      <p class="lead">Planifica entrenamientos y partidos, comunica sin caos y cobra cuotas — con app móvil para tus miembros.</p>
+      <div class="cta">
+        <a class="btn btn--big" href="#demo">Probar gratis</a>
+        <a class="btn btn--ghost btn--big" href="#func">Ver funcionalidades</a>
+      </div>
+    </div>
+    <img src="mock.png" alt="Vista de la plataforma" class="hero__img" />
+  </div>
+</section>
+
+<section id="trust" class="trust">
+  <div class="container">
+    <p class="trust__title">Ya confían en nosotros</p>
+    <div class="trust__logos">
+      <div class="logo">⚽</div><div class="logo">🏀</div><div class="logo">🏐</div><div class="logo">🥎</div>
+    </div>
+  </div>
+</section>
+
+<section id="func" class="features">
+  <div class="container">
+    <h2>Todo lo que necesitas, sin complicarte</h2>
+    <div class="grid">
+      <div class="card"><h3>Calendario inteligente</h3><p>Entrenamientos, partidos y torneos sin choques de instalaciones.</p></div>
+      <div class="card"><h3>Miembros y equipos</h3><p>Jugadores, familias y staff con permisos claros.</p></div>
+      <div class="card"><h3>Comunicaciones</h3><p>Avisos oficiales y chats de equipo. Adiós WhatsApp.</p></div>
+      <div class="card"><h3>Pagos</h3><p>Cuotas y recordatorios automáticos. Todo bajo control.</p></div>
+      <div class="card"><h3>App del club</h3><p>Tu logo y colores en iOS y Android.</p></div>
+      <div class="card"><h3>Multi-club</h3><p>Gestiona varias entidades desde un panel global.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="precios" class="pricing">
+  <div class="container">
+    <h2>Planes simples</h2>
+    <div class="grid">
+      <div class="price">
+        <h3>Básico</h3><p>Para clubes pequeños</p><strong>29 €/mes</strong>
+        <ul><li>Equipos y calendario</li><li>Comunicaciones</li><li>App del club</li></ul>
+        <a class="btn" href="#demo">Empezar</a>
+      </div>
+      <div class="price price--fav">
+        <h3>Profesional</h3><p>El más popular</p><strong>59 €/mes</strong>
+        <ul><li>Todo lo del Básico</li><li>Pagos y recordatorios</li><li>Multi-club</li></ul>
+        <a class="btn" href="#demo">Elegir</a>
+      </div>
+      <div class="price">
+        <h3>Élite</h3><p>Grandes entidades</p><strong>Consultar</strong>
+        <ul><li>Usuarios ilimitados</li><li>Soporte prioritario</li><li>SSO / Integraciones</li></ul>
+        <a class="btn" href="#demo">Contactar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="qs" class="about">
+  <div class="container">
+    <h2>Hecho por gente de club</h2>
+    <p>Construimos Club Hub con una idea: menos gestión, más deporte. Soporte humano y mejoras constantes.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>© <span id="y"></span> Club Hub</div>
+    <nav><a href="#">Privacidad</a> · <a href="#">Términos</a> · <a href="#demo">Contacto</a></nav>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+:root{
+  --bg:#0f172a; --surface:#111827; --panel:#1e293b;
+  --text:#e5e7eb; --muted:#94a3b8; --primary:#3b82f6; --radius:16px;
+}
+*{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto; color:var(--text); background:var(--bg)}
+.container{max-width:1100px;margin:0 auto;padding:0 16px}
+.nav{position:sticky;top:0;background:#0b1220;border-bottom:1px solid #1f2937;z-index:20}
+.nav__inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:800} .brand span{color:var(--primary)}
+.menu a{color:var(--text);text-decoration:none;margin-left:14px;opacity:.9}
+.btn{background:var(--primary);color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+.btn--ghost{background:transparent;border:1px solid #334155}
+.btn--big{padding:14px 20px;border-radius:12px}
+.hero{padding:56px 0;background:linear-gradient(180deg,#0f172a,transparent)}
+.hero__grid{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:center}
+.lead{color:var(--muted);font-size:1.1rem}
+.hero__img{width:100%;border-radius:var(--radius);border:1px solid #263246;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.trust{padding:24px 0;border-top:1px solid #1f2937;border-bottom:1px solid #1f2937;background:#0b1220}
+.trust__title{color:var(--muted);text-align:center;margin:0 0 6px}
+.trust__logos{display:flex;gap:12px;justify-content:center}
+.logo{background:#0f172a;border:1px solid #263246;border-radius:12px;padding:10px 16px}
+.features{padding:56px 0} .features .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--panel);border:1px solid #263246;border-radius:var(--radius);padding:18px}
+.pricing{padding:56px 0;border-top:1px solid #1f2937}
+.pricing .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.price{background:var(--panel);border:1px solid #263246;border-radius:var(--radius);padding:18px}
+.price--fav{outline:2px solid var(--primary)}
+.about{padding:56px 0}
+.footer{padding:18px 0;background:#0b1220;border-top:1px solid #1f2937}
+.footer__grid{display:flex;justify-content:space-between;align-items:center}
+@media (max-width:900px){
+  .hero__grid{grid-template-columns:1fr}
+  .features .grid, .pricing .grid{grid-template-columns:1fr}
+}
